@@ -1,0 +1,51 @@
+"Please enter the maximum points:Enter your points:You got:"
+inc 12
+
+#print 
+lit 0
+lit 32
+lit 33
+out 2
+
+#read maximum points
+la 0 32
+la 0 36
+in 0
+
+#print "Enter yout points: "
+out 3
+lit 32
+lit 18
+lit 19
+out 2
+
+#read in points
+la 0 36
+la 0 40
+in 0
+
+
+la 0 40
+lv 0 36
+lit 100
+mul
+lv 0 32
+div
+sto
+
+#print percentage
+out 3
+lit 50
+lit 8
+lit 9
+out 2
+
+
+lv 0 40
+lit 1
+out 0 #int
+lit 1
+lit 1
+out 2
+out 3 #leerzeile
+halt

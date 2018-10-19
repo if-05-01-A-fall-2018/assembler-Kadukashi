@@ -1,0 +1,35 @@
+"Please enter a number:"
+inc 8
+
+lit 0
+lit 22 #anzahl des strings
+lit 23 #anzahl des strings + 1
+out 2 #string ausgabe
+
+la 0 32
+la 0 36
+in 0
+
+la 0 36
+lit 0
+sto
+
+.loop
+la 0 36
+lv 0 36
+lit 1
+add
+sto
+
+lv 0 36
+lit 1
+out 0
+out 3 #neue zeile
+
+lv 0 32
+lv 0 36
+rel 2
+fjmp .loop
+
+out 3
+halt
